@@ -1,0 +1,49 @@
+//imports
+@use 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Knewave&display=swap');
+
+//variables
+$primary-color: rgb(30, 43, 185);
+$background-color: rgb(229, 233, 243);
+$text-color: rgb(33, 33, 41);
+
+html{
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 1;
+    background-image:  linear-gradient(#bbe0ff 0.9px, transparent 0.9px), linear-gradient(to right, #bbe0ff 0.9px, #ffffff 0.9px);
+    background-size: 18px 18px;
+    font-size: 14pt;
+    font-family: "Indie Flower", cursive;
+}
+body{
+    padding: 24px 0px 24px 0px;
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    max-width:1200px;
+    justify-content: center;
+}
+//Classes
+
+
+.navigation, footer{
+    padding: 24px;
+    background-image: url(../images/paper1.svg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100%; 
+    text-align: center;
+    filter: drop-shadow(0px 0px 11.7px rgba(0, 0, 0, 0.25));
+    p{
+        font-size: 1.2rem;
+        font-weight: bold;
+
+    }
+}
+
+
+.keyboard{
+    font-family: "Knewave", system-ui;
+}

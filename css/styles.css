@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Knewave&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+html {
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: linear-gradient(#bbe0ff 0.9px, transparent 0.9px), linear-gradient(to right, #bbe0ff 0.9px, #ffffff 0.9px);
+  background-size: 18px 18px;
+  font-size: 14pt;
+  font-family: "Indie Flower", cursive;
+}
+
+body {
+  padding: 24px 0px 24px 0px;
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.navigation, footer {
+  padding: 24px;
+  background-image: url(../images/paper1.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+  text-align: center;
+  filter: drop-shadow(0px 0px 11.7px rgba(0, 0, 0, 0.25));
+}
+.navigation p, footer p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.keyboard {
+  font-family: "Knewave", system-ui;
+}/*# sourceMappingURL=styles.css.map */
