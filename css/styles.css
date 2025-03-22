@@ -56,22 +56,31 @@ html {
   opacity: 1;
   background-image: linear-gradient(#bbe0ff 0.9px, transparent 0.9px), linear-gradient(to right, #bbe0ff 0.9px, #ffffff 0.9px);
   background-size: 18px 18px;
+  display: grid;
+  justify-items: center;
   font-size: 14pt;
   font-family: "Indie Flower", cursive;
 }
 
 body {
-  padding: 24px 0px 24px 0px;
+  padding: 24px 16px;
   width: 100%;
+  max-width: 1200px;
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
   max-width: 1200px;
+  justify-items: center;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
   justify-content: center;
 }
 
 .navigation, footer {
-  padding: 24px;
+  padding: 16px;
   background-image: url(../images/paper1.svg);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -84,6 +93,61 @@ body {
   font-weight: bold;
 }
 
+.canvas {
+  min-height: 200px;
+}
+
 .keyboard {
+  padding: 16px;
   font-family: "Knewave", system-ui;
+  border: 1pt solid rgb(33, 33, 41);
+  border-radius: 8pt;
+  display: grid;
+  gap: 0px;
+  max-width: 600px;
+  justify-content: center;
+  margin-bottom: 24px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-container {
+  display: grid;
+  font-family: "Knewave", system-ui;
+  border: none;
+  background-image: url(../images/paper-letter.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
+  padding: 16px;
+  filter: drop-shadow(0px 0px 1.5px rgba(0, 0, 0, 0.25));
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.enabled:hover {
+  background-image: url(../images/paper-letter-hovered.svg);
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 8px;
+}
+
+.selected {
+  background-image: url(../images/paper-letter.svg);
+}
+
+.selected {
+  background-image: url(../images/Circled.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100%;
 }/*# sourceMappingURL=styles.css.map */
