@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damian Oriak Final Project</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scipt.js"></script> 
+    <script src="js/scipt.js" defer></script> 
 </head>
 <body>
     <nav class="navigation wrapper">
@@ -16,122 +16,136 @@
 
     <main class="wrapper">
         <section class="canvas">
-            <div class="hangman">
+            <div id="hangman">
 
             </div>
-            <div class="text">
-                test
+            <button id="start-game">Start Game!</button>
+            <div id="text">
             </div>
         </section>
 
-        <section class="keyboard">
+        <section class="hide" id="keyboard">
             <div class="row">
-                <div class="button-container">
-                    <button type="button" class="selected" disabled>Q</button>
+                <div class="button-container enabled">
+                    <button type="button" class="letter">Q</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">W</button>
+                    <button type="button" class="letter">W</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">E</button>
+                    <button type="button" class="letter">E</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">R</button>
+                    <button type="button" class="letter">R</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">T</button>
+                    <button type="button" class="letter">T</button>
                 </div>
                 
                 <div class="button-container enabled">
-                    <button type="button">Y</button>
+                    <button type="button" class="letter">Y</button>
                 </div>
                     
                 <div class="button-container enabled">
-                    <button type="button">U</button>
+                    <button type="button" class="letter">U</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">I</button>
+                    <button type="button" class="letter">I</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">O</button>
+                    <button type="button" class="letter">O</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">P</button>
+                    <button type="button" class="letter">P</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">A</button>
+                    <button type="button" class="letter">A</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">S</button>
+                    <button type="button" class="letter">S</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">D</button>
+                    <button type="button" class="letter">D</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">F</button>
+                    <button type="button" class="letter">F</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">G</button>
+                    <button type="button" class="letter">G</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">H</button>
+                    <button type="button" class="letter">H</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">J</button>
+                    <button type="button" class="letter">J</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">K</button>
+                    <button type="button" class="letter">K</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">L</button>
+                    <button type="button" class="letter">L</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">Z</button>
+                    <button type="button" class="letter">Z</button>
                 </div>
                     
                 <div class="button-container enabled">
-                    <button type="button">X</button>
+                    <button type="button" class="letter">X</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">C</button>
+                    <button type="button" class="letter">C</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">V</button>
+                    <button type="button" class="letter">V</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">B</button>
+                    <button type="button" class="letter">B</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">N</button>
+                    <button type="button" class="letter">N</button>
                 </div>
 
                 <div class="button-container enabled">
-                    <button type="button">M</button>
+                    <button type="button" class="letter">M</button>
                 </div>
 
             </div>
         </section>
+        <dialog id="win" open>
+            <div class="modal-content fade-in">
+                <h2>Congrats! You won!</h2>
+                <button class="try-again">Play Again</button>
+              </div>
+        </dialog>
+
+        <dialog id="lose">
+            <div class="modal-content">
+                <h2>Too many failed guesses! You lost!</h2>
+                <p id="rightword"></p>
+                <button class="try-again">Play Again</button>
+              </div>
+        </dialog>
     </main>
 
     <footer>
